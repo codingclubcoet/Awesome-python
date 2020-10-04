@@ -4,4 +4,7 @@
 import calendar
 y = int(input("Enter the year : "))
 m = int(input("Enter the month number: "))
-print(calendar.month(y,m))
+if m > 12:
+    print("Try entering a valid month number")
+else:
+    print(calendar.month(y, m))
