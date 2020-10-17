@@ -2,7 +2,7 @@
 
 import pyttsx3
 import PyPDF2
-book = open('filename.pdf', 'rb') 
+book = open('spectre.pdf', 'rb') 
 #replace filename.pdf with the name of your pdf file
 
 pdfReader = PyPDF2.PdfFileReader(book)
