@@ -7,8 +7,8 @@ except ImportError:
 	print("[!] To install pip3 install geopy")
 
 india = ("20.5937° N, 78.9629° E")
-usa = ("37.0902° N, 95.7129° W")
+japan = ("36.2048° N, 138.2529° E")
 
-dis = d.distance(india,usa).km
+dis = d.distance(india,japan).km
 
-print("The distance between India and USA is {} kilometers".format(dis))
+print("The distance between India and Japan is {} kilometers".format(dis))
