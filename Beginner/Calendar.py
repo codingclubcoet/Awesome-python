@@ -1,17 +1,10 @@
-# Function for nth Fibonacci number
- 
-def Fibonacci(n):
-    if n<=0:
-        print("Incorrect input")
-    # First Fibonacci number is 0
-    elif n==1:
-        return 0
-    # Second Fibonacci number is 1
-    elif n==2:
-        return 1
-    else:
-        return Fibonacci(n-1)+Fibonacci(n-2)
- 
-# Driver Program
- 
-print(Fibonacci(9))
+#Input : Year and Month
+#Output: Calendar of that month of that year
+
+import calendar
+y = int(input("Enter the year : "))
+m = int(input("Enter the month number: "))
+if m > 12:
+    print("Try entering a valid month number")
+else:
+    print(calendar.month(y, m))
