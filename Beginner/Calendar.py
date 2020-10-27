@@ -1,17 +1,22 @@
-# Function for nth Fibonacci number
- 
-def Fibonacci(n):
-    if n<=0:
-        print("Incorrect input")
-    # First Fibonacci number is 0
-    elif n==1:
-        return 0
-    # Second Fibonacci number is 1
-    elif n==2:
-        return 1
-    else:
-        return Fibonacci(n-1)+Fibonacci(n-2)
- 
-# Driver Program
- 
-print(Fibonacci(9))
+X = [[12,7,3],
+    [4 ,5,6],
+    [7 ,8,9]]
+# 3x4 matrix
+Y = [[5,8,1,2],
+    [6,7,3,0],
+    [4,5,9,1]]
+# result is 3x4
+result = [[0,0,0,0],
+         [0,0,0,0],
+         [0,0,0,0]]
+
+# iterate through rows of X
+for i in range(len(X)):
+   # iterate through columns of Y
+   for j in range(len(Y[0])):
+       # iterate through rows of Y
+       for k in range(len(Y)):
+           result[i][j] += X[i][k] * Y[k][j]
+
+for r in result:
+   print(r)
